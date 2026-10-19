@@ -1,0 +1,22 @@
+# Generated Python artifacts (the supplied ZIP includes solution-named bytecode)
+__pycache__/
+*.py[cod]
+
+# Local instructor solutions: never commit these files
+controllers/main_matlab/your_controller_solution.m
+*_solution.m
+*_solution.py
+*_sol.m
+*_sol.py
+*Solutions.mlx
+
+# MATLAB/Webots generated output
+simulation_proof.log
+matlab_launcher_log.txt
+controller_results.png
+*.asv
+slprj/
+
+# OS metadata
+__MACOSX/
+.DS_Store
