@@ -25,31 +25,28 @@ classdef your_controller < BaseController
             g = obj.g; %#ok<NASGU>
 
             [delT, X, Y, xdot, ydot, psi, psidot] = obj.getStates(timestep); %#ok<ASGLU>
-            [~,idx] = closestNode(X,Y,trajectory);
-            nAhead = 10;
-            trajpt = trajectory(idx+nAhead,:);
-            x = trajpt(1);
-            y = trajpt(2);
-            %trajectory(idx+nAhead)
-            phi = atan2(y-Y,x-X);
-            angleError = wrapToPi(phi-psi);
-            Kpsi = 10;
-            
-           
-            
-            delta = Kpsi*angleError;  % Safe placeholder; replace with controller output.
+
+            % ---------------|Lateral Controller|-------------------------
+            % Design the lateral controller here and assign delta.
+            %
+            %
+            %
+            %
+            %
+            %
+            %
+            delta = 0;  % Safe placeholder; replace with controller output.
 
             % ---------------|Longitudinal Controller|--------------------
             % Design the longitudinal controller here and assign F.
             %
             %
-            Vref = 50;
-            V = sqrt(xdot^2+ydot^2);
-            Ev = Vref-V;
-            Kv = 100;
             %
             %
-            F = Kv*Ev;      % Safe placeholder; replace with controller output.
+            %
+            %
+            %
+            F = 0;      % Safe placeholder; replace with controller output.
         end
     end
 end
